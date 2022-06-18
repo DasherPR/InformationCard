@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red: #ff2550;
+            --orange: #ff773d;
+            --yellow: #ffc160;
+            --pastel-yellow: #ffffa1;
+            --still-yellow: #ffffd0;
+            --sm: 18px;
+            --md: 20px;
+            --lg: 22px;
+            --elg: 32px;
+        }
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin: 0;
+            background-color: var(--red);
+        }
+        .container {
+            display: grid;
+            place-items: center;
+            width: 100%px;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-color: var(--still-yellow);
+            border-radius: 20px;
+            width: 600px;
+            height: 780px;
+        }
+        .top-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            box-sizing: border-box;
+            margin-top: 32px;
+        }
+        .pfp {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 8px solid var(--yellow);
+        }
+        .name {
+            font-weight: bold;
+            font-family: 'Dancing Script', cursive;
+            font-size: var(--elg);
+        }
+        .parrafo {
+            margin: 10px;
+            box-sizing: border-box;
+            width: 400px;
+            font-size: var(--sm);
+        }
+        .bottom-container .as {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 24px;
+        }
+        a {
+            width: 400px;
+            display: flex;
+            background-color: var(--yellow);
+            border: 2px solid var(--orange);
+            margin: 4px;
+            border-radius: 25px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--red);
+            text-decoration: none;
+        }
+        a p {
+            padding: 12px;
+            font-size: var(--sm);
+            font-weight: bold;
+        }
+        a img {
+            width: 40px;
+            height: 40px;
+            padding: 12px;
+        }
+        a:hover {
+            background-color: var(--red);
+            color: var(--orange);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="top-container">
+                <img src="./src/pfp.jpg" class="pfp">
+                <p class="name">DasherPR</p>
+                <p class="parrafo">Estudiante de Ingeniería Mecatrónica, fanatico de la ciencia y el espacio, Aprendiendo a Programar</p>
+            </div>
+            <div class="bottom-container">
+                <form class="as">
+                    <a href="https://twitter.com/DasherPR" target="_blank" class="Twitter-a">
+                        <p>Twitter</p>
+                        <img src="./src/Twitter.png" alt="logoTwitter">
+                    </a>
+                    <a href="https://www.instagram.com/dasherpr/" target="_blank" class="Instagram">
+                        <p>Instagram</p>
+                        <img src="./src/Instagram.png" alt="logoInstagram">
+                    </a>
+                    <a href="https://github.com/DasherPR" target="_blank" class="Github-a">
+                        <p>GitHub</p>
+                        <img src="./src/GitHub.svg" alt="logoGithub">
+                    </a>
+                    <a href="https://espaciodasher.wordpress.com" target="_blank" class="Blog-a">
+                        <p>Blog</p>
+                        <img src="./src/Wordpress.png" alt="logoBlog">
+                    </a>
+                    <a href="https://discord.gg/mGvsnSPSZx" target="_blank" class="Discord-a">
+                        <p>Discord</p>
+                        <img src="./src/Discord.svg" alt="logoDiscord">
+                    </a>
+                    <a href="https://www.tiktok.com/@dasher2pr" target="_blank" class="TikToka">
+                        <p>TikTok</p>
+                        <img src="./src/TikTok.svg" alt="logoTiktok">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
